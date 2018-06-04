@@ -51,34 +51,10 @@ window.renderStatistics = function (ctx, names, times) {
   ctx.fillStyle = 'white';
   ctx.fill();
 
-  // облако и текст
   ctx.font = '16px PT Mono';
   ctx.fillStyle = '#000';
   ctx.fillText('Ура вы победили!', CLOUD_TL_X + 10, CLOUD_TL_Y + 20);
   ctx.fillText('Список результатов:', CLOUD_TL_X + 10, CLOUD_TL_Y + 40);
-
-  // игроки и результаты
-  // ctx.fillStyle = '#000';
-  // ctx.fillText('Вы', CLOUD_BL_X + GAP + BAR_WIDTH * 0 + GAP * 0, 260);
-  // ctx.fillStyle = 'rgba(255, 0, 0, 1)';
-  // ctx.fillRect(CLOUD_BL_X + GAP + BAR_WIDTH * 0 + GAP * 0, 90, BAR_WIDTH, BAR_HEIGHT);
-
-  // ctx.fillStyle = '#000';
-  // ctx.fillText('Кекс', CLOUD_BL_X + GAP + BAR_WIDTH * 1 + GAP * 1, 260);
-  // ctx.fillStyle = 'rgba(0, 0, 255, ' + Math.random() + ')';
-  // ctx.fillRect(CLOUD_BL_X + GAP + BAR_WIDTH * 1 + GAP * 1, 90, BAR_WIDTH, BAR_HEIGHT);
-
-  // ctx.fillStyle = '#000';
-  // ctx.fillText('Катя', CLOUD_BL_X + GAP + BAR_WIDTH * 2 + GAP * 2, 260);
-  // ctx.fillStyle = 'rgba(0, 0, 255, ' + Math.random() + ')';
-  // ctx.fillRect(CLOUD_BL_X + GAP + BAR_WIDTH * 2 + GAP * 2, 90, BAR_WIDTH, BAR_HEIGHT);
-
-  // ctx.fillStyle = '#000';
-  // ctx.fillText('Игорь', CLOUD_BL_X + GAP + BAR_WIDTH * 3 + GAP * 3, 260);
-  // ctx.fillStyle = 'rgba(0, 0, 255, ' + Math.random() + ')';
-  // ctx.fillRect(CLOUD_BL_X + GAP + BAR_WIDTH * 3 + GAP * 3, 90, BAR_WIDTH, BAR_HEIGHT);
-
-  // var players = ['Вы', 'Кекс', 'Катя', 'Игорь'];
 
   for (var i = 0; i < names.length; i++) {
     ctx.fillStyle = '#000';
